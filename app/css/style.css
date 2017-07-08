@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #001d8a;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #fff; }
+
+header, section {
+  width: 100%; }
+
+.col-1-2 {
+  width: 50%;
+  float: left; }
+
+header {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 20px 0;
+  z-index: 10; }
+  header #main-logo {
+    display: inline-block;
+    float: left;
+    margin-left: 150px; }
+    header #main-logo h1 {
+      display: inline-block;
+      margin: 0; }
+    header #main-logo .fa {
+      font-size: 2em;
+      float: left;
+      margin-right: 10px;
+      color: #ecd407;
+      line-height: 43px; }
+  header .header-contact {
+    display: inline-block;
+    float: right;
+    width: 300px; }
+    header .header-contact .fa {
+      font-size: 2em;
+      float: left;
+      margin-right: 10px;
+      line-height: 45px; }
+    header .header-contact span {
+      display: block; }
+      header .header-contact span.call {
+        font-size: 14px; }
+      header .header-contact span.phone {
+        font-size: 20px; }
+
+section {
+  background-image: url(../img/background.png);
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  position: absolute; }
+  section .container {
+    height: 500px;
+    width: 380px;
+    position: relative;
+    margin-left: 65vw;
+    margin-top: 30vh;
+    backface-visibility: hidden; }
+    section .container span {
+      color: #ecd407; }
+    section .container .form {
+      padding: 20px;
+      background-color: #001d8a;
+      display: inline-block;
+      float: left;
+      height: 400px; }
+      section .container .form input, section .container .form textarea {
+        padding: 10px;
+        width: 100%;
+        margin-top: 10px; }
+      section .container .form #btn {
+        background-color: #ecd407;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        border: 0px solid #fff;
+        width: 100px;
+        transition: all .3s; }
+        section .container .form #btn:hover {
+          background-color: #fff;
+          cursor: pointer; }
+
+footer {
+  background-color: #292929;
+  padding: 50px 0; }
+  footer .phone-footer {
+    text-align: center;
+    margin-bottom: 30px; }
+    footer .phone-footer .fa {
+      background-color: yellow;
+      color: #000;
+      height: 50px;
+      width: 50px;
+      font-size: 25px;
+      text-align: center;
+      line-height: 50px;
+      display: block;
+      margin: auto;
+      margin-bottom: 10px; }
+  footer p {
+    text-align: center;
+    font-size: 0.8em; }

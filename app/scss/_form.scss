@@ -1,0 +1,50 @@
+@import "variables";
+@import "mixins";
+
+section {
+    background-image: url(../img/background.png);
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    
+    .container {
+        height: 500px;
+        width: 380px;
+        position: relative;
+        margin-left: 65vw;
+        margin-top: 30vh;
+        backface-visibility: hidden;
+        
+        span {
+            color: $yellow-color;
+        }
+        
+        .form {
+            padding: 20px;
+            background-color: $main-color;
+            display: inline-block;
+            float: left;
+            height: 400px;
+            
+            input, textarea {
+                @include input;
+            }
+            
+            #btn {
+                background-color: $yellow-color;
+                padding: 20px;
+                font-size: 20px;
+                font-weight: 700;
+                border: 0px solid #fff;
+                width: 100px;
+                transition: all .3s;
+                
+                &:hover {
+                    background-color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
